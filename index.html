@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Besar Web | Attack On Titan</title>
+    <link rel="stylesheet" href="assets1/css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+</head>
+<style>
+    a {
+        font-family: 'Montserrat',Helvetica,sans-serif;
+        font-size: 14px;
+        font-size: .875rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-family: 'sans-serif';
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, red, black);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .w3-card-4 img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .card-content {
+        padding: 15px;
+        height: 300px;
+    }
+    .mySlides {
+        display: none;
+        animation: fade-in 1.5s ease-out; /* Tentukan durasi, jenis easing, dan nama keyframe */
+    }
+
+    .w3-col {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
+<body>
+    <div class="w3-container" style="background-color:black ; display: flex; text-align: center;
+    padding: 20px; text-align:  center; justify-content: space-around;">
+    <br>
+    <center>
+        <img class="w3-round-xlarge" src="assets1/img/aot.png" width="250px" alt="">
+    </center>
+    <br>
+    </div>
+    <div class="w3-bar" style="background-color: black;">
+        <a onclick="movePage('history')" class="w3-bar-item w3-button w3-text-grey">HISTORY</a>
+        <a onclick="movePage('titan')" class="w3-bar-item w3-button w3-text-grey">TITANS</a>
+        <div class="w3-dropdown-hover">
+            <a class="w3-button w3-text-grey">CHARACTER</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a onclick="movePage('cadet')" class="w3-bar-item w3-button">CADET CORPS</a>
+                <a onclick="movePage('scout')" class="w3-bar-item w3-button">SCOUT REGIMENT</a>
+                <a onclick="movePage('military')" class="w3-bar-item w3-button">MILITARY POLICE AND GARRISON REGIMENT</a>
+            </div>
+        </div>
+        <a onclick="movePage('aboutme')" class="w3-bar-item w3-button w3-text-grey w3-right">ABOUT ME</a>
+      </div>
+      <div class="w3-container w3-animate-zoom page" id="history" style="background-image: url(assets1/img/bg_aot.jpg); background-size: cover;">
+        <h2 class="w3-text-white">HISTORY</h2>
+        <hr>
+            <center>
+                <img class="w3-round-large" src="assets1/img/founding.jpg" alt="" style="width: 500px;">
+            </center>
+         <p class="w3-text-white" style="text-indent: 50px;">Kelahiran para Titan ternyata merupakan hasil seorang budak yang dihukum atas kejahatan yang dia sendiri tidak lakukan. Ymir merupakan seorang budak dari suku Eldia sekitar 2.000 tahun yang lalu. Suatu hari, Ymir dituduh sebagai pelaku atas kaburnya seekor babi dari kandangnya. Ymir pun kemudian dihukum oleh raja Fritz atas perbuatan yang tidak dia lakukan.Ymir kemudian kabur dan pasukan Eldia yang lain mencoba mengejarnya. Ymir berlari ke arah hutan, dan terlihat bagian belakang tubuhnya terkena anak panah yang ditembakan ke arahnya. Ymir pun kemudian menemukan sebuah pohon raksasa yang mana di bagian bawahnya terdapat sebuah lubang besar yang menuju ke sebuah gua.Menderita karena luka akibat anak panah, Ymir pun terjatuh ke sebuah kolam besar yang ada di dalam pohon raksasa tersebut. Saat Ymir tenggelam, tiba-tiba muncul makhluk unik berbentuk tulang belakang manusia berenang dan kemudian mendekati Ymir. Tidak berapa lama petir pun kemudian muncul dan ledakan besar terjadi.</p>
+         <p class="w3-text-white" style="text-indent: 50px;">Faktanya, Ymir memang harus tewas meskipun dia memiliki kekuatan Titan. Dan dalam episode tersebut, momen kematian itulah yang menjadi awal mula Ymir berada di dimensi Path. Raja Fritz sendiri tidak ingin kekuatan Titan Ymir hilang begitu saja. Dia pun memerintahkan anak-anaknya untuk memakan daging ibunya. Momen mengerikan tersebut menjadi cara untuk mewariskan kekuatan Titan dari satu orang ke orang lainnya. Raja Fritz juga meminta anak-anaknya untuk terus melahirkan sebanyak mungkin anak agar kekuasaan Eldia bisa terus berkembang dan tidak akan pernah padam. Hal tersebut juga dilakukan agar kekuatan Titan bisa tetap ada di tangan bangsa Eldia.Proses memakan daging Ymir tersebut juga menjadi momen awal terbentuknya berbagai jenis Titan, yang mana kita mengenalnya sebagai sembilan jenis Titan saat ini. Meskipun Ymir harus merasa kesepian dan kesakitan serta menderita, Ymir menghabiskan waktu 2. 000 tahun di dimensi Path tersebut. Dia diperlihatkan menjadi pencipta semua Titan yang ada di dunia.</p>
+      </div>
+      <div class="w3-container page w3-animate-zoom" id="titan" style="background-image: url(assets1/img/bg_aot.jpg);">
+        <h2 class="w3-text-white">TITANS</h2>
+        <hr>
+        <div class="w3-row-padding">
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/founding.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>FOUNDING TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/attack.webp" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>ATTACK TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/beast.webp" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>BEAST TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/armor.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>ARMOR TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/colossal.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>COLOSSAL TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/warhammer.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>WARHAMMER TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/female.avif" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>FEMALE TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/jaw.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>JAW TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large w3-animate-top">
+                    <img src="assets1/img/cart.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p class="w3-text-white"><strong>CART TITAN</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </center>
+      </div>
+      </div>
+      <div class="w3-container page w3-animate-bottom" id="cadet" style="background-image: url(assets1/img/bg2.jpg);">
+        <h2 class="w3-center w3-text-white">CADET CORPS</h2>
+        <div class="w3-center w3-row">
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/eren.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">EREN YEAGER</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/mikasa.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">MIKASA ACKERMAN</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/armin.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">ARMIN ARLERT</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/conny.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">CONNY SPRINGER</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/sasha.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">SASHA BRAUS</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/jean.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">JEAN KIRSCHTEIN</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/annie.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">ANNIE LEONHART</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/ymir.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">YMIR</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/historia.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">HISTORIA REISS</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/reiner.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">REINER BRAUN</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/bertotl.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">BERTHOLDT HOOVER</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/marco.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">MARCO DITZ</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets1/img/keith.jpg" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-white w3-animate-opacity w3-margin-top">KEITH SHADIS</div>
+            </div>
+        </div>
+        </div>
+        <div class="w3-container page w3-animate-bottom" id="scout" style="background-image: url(assets1/img/bg2.jpg);">
+            <h2 class="w3-center w3-text-white">SCOUT REGIMENT</h2>
+            <div class="w3-center w3-row">
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/levi.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">LEVI ACKERMAN</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/hange.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">HANGE ZOE</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/eld.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">ELD GIN</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/oruo.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">ORUO BOZARD</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/gunter.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">Gunther Schultz</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/petra.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">PETRA</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/moblit.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">MOBLIT</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/erwin.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">ERWIN SMITH</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/miche.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">MICHE ZACHARIUS</div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container page w3-animate-bottom" id="military" style="background-image: url(assets1/img/bg2.jpg);">
+            <h2 class="w3-center w3-text-white">MILITARY POLICE AND GARRISON REGIMENT</h2>
+            <div class="w3-center w3-row">
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/nile.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">NILE DAWK</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/hitch.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">HITCH</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/marlo.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">MARLO FREUDENBERG</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/pyxis.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">DOT PYXIS</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/ian.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">IAN DIETRICH</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets1/img/rico.jpg" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-white w3-animate-opacity w3-margin-top">RICO BRZENSKA</div>
+                </div>
+            </div>
+        </div>
+        <div class="w3=container page w3-animate-top" id="aboutme">
+            <center>
+                <h2>ABOUT ME</h2>
+                    <div class="w3-display-container w3-container w3-text-black">
+                        <div style="width: 200px;">
+                            <img src="assets1/img/saya.jpeg" alt="foto profil" width="100%"
+                                style="border: 5px solid white; margin-top: 2%;">
+                                <div class="w3-container">
+                                    <h3 class="w3-text-grey">RAFI HADYAN PUTRA</h3>
+                                    <p>Kelas : IF-11</p>
+                                    <p>NIM: 10123442</p>
+                                    <h2 class="w3-text-grey">UNIVERSITAS KOMPUTER</h2>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+</body>
+<script>
+window.onload = function () {
+    checkHash();
+  };
+
+  function checkHash() {
+    var hash = window.location.hash.substring(1);
+    var validPages = ["history", "old_trafford","titles"]; // Daftar halaman yang valid
+
+    if (validPages.includes(hash)) {
+      movePage(hash);
+    } else {
+      movePage("history"); // Halaman default saat tidak ada hash atau hash tidak valid
+    }
+  }
+
+function movePage(page) {
+    var i;
+    var x = document.getElementsByClassName("page");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    }
+    document.getElementById(page).style.display = "block"; 
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000);
+}
+</script>
+</html>
